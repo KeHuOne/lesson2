@@ -1,17 +1,28 @@
 age = int(input("Укажите ваш возраст:"))
 
-def classification(age):
-    if age <= 6:
-        print("Вы ещё ходите в садик.")
-    elif 7 <= age <= 17:
-        print("Вы учитесь в школе.")
-    elif 18 <= age <= 23:
-        print("Вы учитесь в ВУЗе.")
-    elif 90 <= age <= 122:
-        print("Поздравляю! Вы долгожитель.")
-    elif age >= 123:
-        print("Долгожителей старше 122 лет не было зафиксировано,вы меня обманываете!")
-    else:
-        print("Вы ходите на работу.")
+kindergarten = int(7)
+school = int(18)
+academy = int(24)
+work = int(65)
+retiree = int(90)
+long_liver = int(122)
 
-classification(age)
+def classification(age):
+    age = abs(int(age))
+    if age <= kindergarten:
+        return "Вы ещё ходите в садик."
+    elif age <= school:
+        return "Вы учитесь в школе."
+    elif age <= academy:
+        return "Вы учитесь в ВУЗе."
+    elif age <= work:
+         return "Вы ходите на работу."    
+    elif age <= retiree:
+        return "Вы пенсионер."
+    elif age <= long_liver:
+        return "Поздравляю! Вы долгожитель."
+    else:
+        return f"Долгожителей старше {long_liver} лет не было зафиксировано,вы меня обманываете!"
+
+p = classification(age)
+print(p)
