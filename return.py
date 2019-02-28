@@ -8,7 +8,7 @@ retiree = int(90)
 long_liver = int(122)
 
 def classification(age):
-    age = abs(int(age))
+    age = int(age)
     if age <= kindergarten:
         return "Вы ещё ходите в садик."
     elif age <= school:
