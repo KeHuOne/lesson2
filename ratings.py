@@ -13,3 +13,6 @@ list_of_ratings = [
 ]
 print(list_of_ratings[0]['scores'])
 
+
+
+
