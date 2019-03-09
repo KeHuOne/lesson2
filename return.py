@@ -1,14 +1,13 @@
 age = int(input("Укажите ваш возраст:"))
 
-kindergarten = int(7)
-school = int(18)
-academy = int(24)
-work = int(65)
-retiree = int(90)
-long_liver = int(122)
+kindergarten = 7
+school = 18
+academy = 24
+work = 65
+retiree = 90
+long_liver = 122
 
 def classification(age):
-    age = int(age)
     if age <= kindergarten:
         return "Вы ещё ходите в садик."
     elif age <= school:
